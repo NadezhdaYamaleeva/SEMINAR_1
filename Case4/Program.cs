@@ -5,15 +5,9 @@ int b = int.Parse(Console.ReadLine());
 Console.WriteLine("Введите число 3:");
 int c = int.Parse(Console.ReadLine());
 
-if (a > b); (a > c);
-{
-    Console.WriteLine("max = " + a);
-}
-if (b > a); (b > c);
-{
-    Console.WriteLine("max = " + b);
-}
+int max = a;
+if (b > max) max = b;
+if (c > max) max = c;
 
-{
-    Console.WriteLine("max = " + c);
-}
+Console.Write("Максимальное число");
+Console.WriteLine(max);
